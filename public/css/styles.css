@@ -1,0 +1,186 @@
+/* ***********TAGS********* */
+h1, h2, h3, h4, h5, h6{
+  font-family: "Montserrat";
+}
+h4{
+  line-height: 1.5;
+}
+body{
+  box-sizing: border-box;
+  font-family: "Montserrat",sans-serif;
+  text-align: center;
+}
+a {color:#FFF;}         
+a:visited {color:#FFF;} 
+a:hover {color:#FFF;}   
+a:active {color:#FFF;} 
+
+
+/* SECTIONS */
+#title{
+  text-align: center;
+}
+#features{
+  position: relative;
+}
+#footer{
+  height: 300px;
+  background-color:#141414;
+}
+
+/* ***********CLASS SELECTORS********* */
+.container-fluid{
+  padding: 7% 15%;
+}
+.download-button{
+  margin:1%;
+}
+/* Headings */
+.big-heading{
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 5rem !important;
+  line-height: 1.5;
+  color: white;
+}
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight:600;
+}
+/* Sections */
+.colored-section{
+  height: 100vh;
+  filter: brightness(85%);
+  background-image: url(../images/macbook.jpg);
+  background-size: 100% 100%;
+  background-position: 20% 20%;
+  background-attachment: fixed;
+  color: white;
+}
+
+.white-section{
+  background-color: white;
+  color: black;
+}
+/* Navigation Bar */
+.navbar{
+  padding: 0 0 2.5rem;
+}
+.nav-link{
+  color: white !important;
+}
+.nav-link:hover{
+  color: grey !important;
+}
+.logo
+{
+
+}
+
+.nav-item{
+  padding: 0 10px;
+}
+.nav-link{
+  font-family:"Montserrat";
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.download-button{
+  margin: 5% 3% 5% 0;
+}
+/* Title Section */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+.title-image{
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+
+
+/* Features Section */
+.features-icons{
+  color: #ef8172;
+  font-size: 3rem;
+  margin: 1.3rem 0 1.3rem;
+}
+.features-icons:hover{
+  color: #ff4c68;
+  font-size: 3rem;
+}
+.col-lg-3{
+  padding: 3% 2%;
+}
+.p-section{
+  color: #8f8f8f;
+  margin: 0 auto;
+  width: 100%;
+  line-height: 1.8;
+}
+.feature-title{
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+/* Footer Icons */
+.footer-icons{
+  padding: 1%;
+  margin-bottom: 1%;
+  font-size: 2rem;
+  color: white
+}
+.footer-icons:hover{
+  cursor: pointer;
+  color: 
+}
+.footer{
+  height: 20vh;
+  margin: 0;
+  padding: 5% 0 0;
+  display: flex;
+  justify-content: center;
+}
+.footer > a {
+  margin: 0 1% 1%;
+}
+.by-Eugene{
+  margin: 0;
+  color: white;
+}
+
+/* media queries */
+
+@media (max-width:1068px) {
+  .big-heading{
+    font-size: 3rem;
+  }
+  .title-image{
+    position: static;
+    transform:rotate(0deg);
+  }
+    .big-heading {
+    font-size: 3rem !important;
+  }
+  #title{
+    text-align: center;
+  }
+}
+
+/* contact */
+
+.contact{
+  padding: 1% 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form{
+  margin-top: 10%;
+}
+.color-contact{
+  height: 70vh;
+}
