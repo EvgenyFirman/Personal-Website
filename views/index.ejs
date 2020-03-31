@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Evgeny Firman</title>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,900|Ubuntu:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/bc00ad95da.js"></script>
+    <script src="app.js" defer></script>
+    <script src ="script.js" defer></script>
+
+  </head>
+<body>
+<section class="colored-section" id="title">
+  <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <img class="logo" src="/images/logo.svg"><a class="navbar-brand" href=""></a></img>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ToggleDemo">
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="ToggleDemo">
+
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Навыки</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Обо мне</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#partnership">Сотрудничество</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+    <!-- Title -->
+
+    <div class="row">
+
+      <div class="col-lg-12 col-md- col-sm-12 col-xs-12">
+        <h1 class="big-heading"><%= title1 %></h1>
+        <h1 class="big-heading web-dev"><%= title2 %></h1>
+       <a href="#partnership"><button type="button" class="btn  btn-lg btn-danger"><i class="fab "></i>Связаться со мной </button></a>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3">
+        <img src="/images/html.svg" alt="">
+        <h3 class="feature-title">HTML 5</h3>
+        <p class="p-section">Стандарт гипертекстовой разметки, используемый во всем мире</p>
+      </div>
+      <div class="col-lg-3">
+       <img src="/images/css.svg" alt="">
+        <h3 class="feature-title">CSS 3</h3>
+        <p class="p-section">Каскадные таблицы стилей,которые сделают ваш сайт уникальным</p>
+      </div>
+      <div class="col-lg-3">
+        <img src="/images/js.svg" alt="">
+        <h3 class="feature-title">JavaScript ES6+</h3>
+        <p class="p-section">Язык программирования №1 в Веб разработке</p>
+      </div>
+      <div class="col-lg-3">
+        <img src="/images/react.svg" alt="">
+        <h3 class="feature-title">React JS</h3>
+        <p class="p-section">JavaScript-библиотека, используемая компанией Facebook</p>
+      </div>
+      <div class="col-lg-3">
+        <img src="/images/nodejs.svg" alt="">
+        <h3 class="feature-title">Node JS</h3>
+        <p class="p-section">Программная платформа, превращающая JavaScript в язык бекенд разработки</p>
+      </div>
+      <div class="col-lg-3">
+        <img src="/images/mongo.svg" alt="">
+        <h3 class="feature-title">Mongo DB</h3>
+        <p class="p-section">Самая популярная нереляционная база данных в мире</p>
+      </div>
+      <div class="col-lg-3">
+        <img src="/images/photoshop.svg" alt="">
+        <h3 class="feature-title">Adobe Photoshop</h3>
+        <p class="p-section">Самая популярная нереляционная база данных в мире</p>
+      </div>
+      <div class="col-lg-3">
+        <img src="/images/illustrator.svg" alt="">
+        <h3 class="feature-title">Adobe Illustrator</h3>
+        <p class="p-section"> Векторный графический редактор №1 в мире </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact-me -->
+
+<section id="partnership"> 
+<div  class="colored-section color-contact"> 
+<div class="container contact">
+	<div class="row contact-row">
+		<div class="col-lg-12 form-div">
+			<div class="contact-info">
+				<img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+				<h2>Свяжитесь со мной</h2>
+				<h4>Я буду рад с вами сотрудничать😎
+        </h4>
+			</div>
+		</div>
+		<div class="col-lg-12">
+			<div class="contact-form">
+				<div class="form-group">
+				  <div class="col-lg-12"> 
+          <form action="/" method="POST">       
+					<input type="text" class="form-control" id="fname" placeholder="Введите имя" name="fname" required>
+				  </div>
+				</div>
+				</div>
+				<div class="form-group">
+				  <div class="col-lg-12">
+					<input type="email" class="form-control" id="email" placeholder="Введите email" name="email" required>
+				  </div>
+				</div>
+				<div class="form-group">
+				  <div class="col-lg-12">
+					<textarea class="form-control" rows="5" id="comment" name="ftext" required></textarea>
+				  </div>
+				</div>
+				<div class="form-group">        
+				  <div class="col-lg-12">
+					<button type="submit" id="btn-submit" class="btn btn-lg btn-danger">Отправить</button>
+          </div>
+        </form>  
+				</div>
+			</div>
+		</div>
+  </div>
+</div>
+</div>
+</section>
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+
+  
+    <div class="container-fluid footer">
+
+
+    <a href="https://vk.com/evgeny_firman"><i class="footer-icons fab fa-vk"></i></a>
+    <a href="https://instagram.com/omg_eugene"><i class="footer-icons fab fa-instagram"></i></a>
+    <a href="mailto:Eugeniolio@yandex.ru"><i class="footer-icons fas fa-envelope"></i></a>
+  </div>
+  <p class="by-Eugene">©  By Eugene Firman 2019</p>
+
+ 
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

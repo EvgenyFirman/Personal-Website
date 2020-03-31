@@ -1,9 +1,7 @@
 const express = require('express');
-const path = require("path")
+const path = require("path");
 const nodemailer = require("nodemailer")
 const bodyParser = require ('body-parser');
-
-
 
 const app = express();
 
@@ -11,8 +9,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(express.static(path.join(__dirname, "public")))
 
+app.set("view engine", "ejs")
+
 app.get("*", function(req,res){
-    res.sendFile(path.join(__dirname,"index.html"))
+    res.render("index",{title1: "I am Eugene", title2: "A Web Developer"})
 })
 app.post("/",function(req,res){
 
@@ -34,8 +34,6 @@ app.post("/",function(req,res){
                 <h3>${req.body.ftext}</h3>
         `
         };
-        console.log(req.body.ftext)
-    
         transporter.sendMail(mailOptions, function(error, info){
             // if (error) {
             //   console.log(error);
@@ -43,6 +41,7 @@ app.post("/",function(req,res){
             //   console.log('Email sent: ' + info.response);
             // }
           });
+            res.render("index",{title1: "Буду рад сотрудничеству😎", title2: null})
     });
     
 
