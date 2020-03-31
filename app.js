@@ -3,6 +3,8 @@ const path = require("path")
 const nodemailer = require("nodemailer")
 const bodyParser = require ('body-parser');
 
+
+
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -14,7 +16,7 @@ app.get("*", function(req,res){
 })
 app.post("/",function(req,res){
 
-    var transporter = nodemailer.createTransport({
+    let transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
           user: 'EugeneFirman@gmail.com',
@@ -26,16 +28,20 @@ app.post("/",function(req,res){
         from: req.body.email,
         to: "EugeneFirman@gmail.com", 
         subject: "From website" ,
-        text: req.body.fname + " " + req.body.email + " " + req.body.ftext 
+        text: req.body.fname + " " + req.body.email + " " + req.body.ftext,
+        html: `<h1> Привет, меня зовут ${req.body.fname}</h1>
+                <h2> Мой email: ${req.body.email} </h3>
+                <h3>${req.body.ftext}</h3>
+        `
         };
         console.log(req.body.ftext)
     
         transporter.sendMail(mailOptions, function(error, info){
-            if (error) {
-              console.log(error);
-            } else {
-              console.log('Email sent: ' + info.response);
-            }
+            // if (error) {
+            //   console.log(error);
+            // } else {
+            //   console.log('Email sent: ' + info.response);
+            // }
           });
     });
     
