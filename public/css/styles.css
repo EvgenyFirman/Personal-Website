@@ -9,6 +9,8 @@ body{
   box-sizing: border-box;
   font-family: "Montserrat",sans-serif;
   text-align: center;
+  max-width: 100%;
+  min-width: 100%;
 }
 a {color:#FFF;}         
 a:visited {color:#FFF;} 
@@ -93,14 +95,6 @@ a:active {color:#FFF;}
 #title .container-fluid {
   padding: 3% 15% 7%;
 }
-.title-image{
-  width: 60%;
-  transform: rotate(25deg);
-  position: absolute;
-  right: 30%;
-}
-
-
 /* Features Section */
 .features-icons{
   color: #ef8172;
@@ -155,15 +149,12 @@ a:active {color:#FFF;}
 /* media queries */
 
 @media (max-width:1068px) {
+  body{
+    margin:0;
+    padding: 0;
+  }
   .big-heading{
-    font-size: 3rem;
-  }
-  .title-image{
-    position: static;
-    transform:rotate(0deg);
-  }
-    .big-heading {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
   }
   #title{
     text-align: center;
