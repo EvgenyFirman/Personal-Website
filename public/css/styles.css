@@ -53,8 +53,7 @@ a:active {color:#FFF;}
 /* Sections */
 .colored-section{
   height: 100vh;
-  filter: brightness(85%);
-  background-image: url(../images/macbook.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../images/macbook.jpg);
   background-size: 100% 100%;
   background-position: 20% 20%;
   background-attachment: fixed;
