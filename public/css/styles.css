@@ -2,6 +2,11 @@
 h1, h2, h3, h4, h5, h6{
   font-family: "Montserrat";
 }
+hr{
+  height: 1px;
+  background-color: white;
+  width: 50vh;
+}
 h4{
   line-height: 1.5;
 }
@@ -17,7 +22,6 @@ a:visited {color:#FFF;}
 a:hover {color:#FFF;}   
 a:active {color:#FFF;} 
 
-
 /* SECTIONS */
 #title{
   text-align: center;
@@ -26,7 +30,7 @@ a:active {color:#FFF;}
   position: relative;
 }
 #footer{
-  height: 300px;
+ 
   background-color:#141414;
 }
 
@@ -95,15 +99,7 @@ a:active {color:#FFF;}
   padding: 3% 15% 7%;
 }
 /* Features Section */
-.features-icons{
-  color: #ef8172;
-  font-size: 3rem;
-  margin: 1.3rem 0 1.3rem;
-}
-.features-icons:hover{
-  color: #ff4c68;
-  font-size: 3rem;
-}
+
 .col-lg-3{
   padding: 3% 2%;
 }
@@ -131,9 +127,9 @@ a:active {color:#FFF;}
   color: 
 }
 .footer{
-  height: 20vh;
+  height: 15vh;
   margin: 0;
-  padding: 5% 0 0;
+  padding: 3% 0 0;
   display: flex;
   justify-content: center;
 }
@@ -142,6 +138,7 @@ a:active {color:#FFF;}
 }
 .by-Eugene{
   margin: 0;
+  padding: 0 0 1.5%;
   color: white;
 }
 
@@ -172,5 +169,8 @@ a:active {color:#FFF;}
   margin-top: 10%;
 }
 .color-contact{
-  height: 70vh;
+  height: 75vh;
+}
+.contact-info{
+  padding: 2% 0 0;
 }
