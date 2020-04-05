@@ -30,19 +30,6 @@ body{
   max-width: 100%;
   min-width: 100%;
 }
-
-body::before {
-    content: '';
-    background-image: url(../images/macbook.jpg);
-    position: fixed;
-    background-size: 100% 100%;
-    background-position: 20% 20%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-}
 a {color:#FFF;}         
 a:visited {color:#FFF;} 
 a:hover {color:#FFF;}   
@@ -195,7 +182,7 @@ a:active {color:#FFF;}
   margin-top: 10%;
 }
 .color-contact{
-  height: 75vh;
+  height: 100%;
 }
 .contact-info{
   padding: 2% 0 0;
