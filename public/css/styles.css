@@ -1,4 +1,7 @@
 /* ***********TAGS********* */
+*{
+  box-sizing: border-box;
+}
 h1, h2, h3, h4, h5, h6{
   font-family: "Montserrat";
 }
@@ -11,7 +14,6 @@ h4{
   line-height: 1.5;
 }
 body{
-  box-sizing: border-box;
   font-family: "Montserrat",sans-serif;
   text-align: center;
   max-width: 100%;
@@ -36,7 +38,7 @@ a:active {color:#FFF;}
 
 /* ***********CLASS SELECTORS********* */
 .container-fluid{
-  padding: 7% 15%;
+  padding: 5% 15%;
 }
 .download-button{
   margin:1%;
@@ -72,17 +74,13 @@ a:active {color:#FFF;}
 .navbar{
   padding: 0 0 2.5rem;
 }
+.
 .nav-link{
   color: white !important;
 }
 .nav-link:hover{
   color: grey !important;
 }
-.logo
-{
-
-}
-
 .nav-item{
   padding: 0 10px;
 }
@@ -102,6 +100,11 @@ a:active {color:#FFF;}
 
 .col-lg-3{
   padding: 3% 2%;
+}
+ #features hr{
+   height: 1px;
+  background-color: black;
+  width: 30vh;
 }
 .p-section{
   color: #8f8f8f;
@@ -156,7 +159,6 @@ a:active {color:#FFF;}
     text-align: center;
   }
 }
-
 /* contact */
 
 .contact{
