@@ -21,6 +21,16 @@ body{
   max-width: 100%;
   min-width: 100%;
 }
+body:before {
+    content: '';
+    background-image: url(../images/macbook.jpg);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
 a {color:#FFF;}         
 a:visited {color:#FFF;} 
 a:hover {color:#FFF;}   
