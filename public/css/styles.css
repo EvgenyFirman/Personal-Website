@@ -15,12 +15,22 @@ hr{
 h4{
   line-height: 1.5;
 }
+html, body{
+  width: 100%;
+  height: 100%;
+}
+#wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+  }
 body{
   font-family: "Montserrat",sans-serif;
   text-align: center;
   max-width: 100%;
   min-width: 100%;
 }
+
 body::before {
     content: '';
     background-image: url(../images/macbook.jpg);
