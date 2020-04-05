@@ -21,10 +21,12 @@ body{
   max-width: 100%;
   min-width: 100%;
 }
-body:before {
+body::before {
     content: '';
     background-image: url(../images/macbook.jpg);
     position: fixed;
+    background-size: 100% 100%;
+    background-position: 20% 20%;
     left: 0;
     right: 0;
     top: 0;
