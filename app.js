@@ -41,7 +41,7 @@ app.post("/",function(req,res){
             //   console.log('Email sent: ' + info.response);
             // }
           });
-            res.render("index",{title1: "Рад Сотрудничать😎", title2: null})
+            res.render("index",{title1: "Рад Сотрудничать!", title2: null})
     });
     
 
