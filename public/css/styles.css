@@ -58,9 +58,9 @@ body{
 .colored-section{
   height: 100vh;
   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.1)), url(../images/macbook.jpg);
-  background-size: 100% 125%;
-  background-position: 5% 55%;
-  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+  background-attachment: fixed;
   color: white;
 }
 
