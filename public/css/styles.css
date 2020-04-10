@@ -58,10 +58,9 @@ body{
 .colored-section{
   height: 100vh;
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.1)), url(../images/macbook.jpg);
-  background-position: 50%;
-  background-size: 100% 120%;
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   color: white;
 }
 
@@ -150,6 +149,9 @@ body{
   body{
     margin:0;
     padding: 0;
+  }
+  .colored-section{
+    background-size: cover;
   }
   .big-heading{
     font-size: 1.6rem !important;
