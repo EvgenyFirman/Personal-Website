@@ -60,6 +60,7 @@ body{
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.1)), url(../images/macbook.jpg);
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   color: white;
 }
@@ -152,6 +153,7 @@ body{
   }
   .colored-section{
     background-size: cover;
+    background-attachment: scroll;
   }
   .big-heading{
     font-size: 1.6rem !important;
