@@ -73,6 +73,10 @@ body{
   color: black;
 }
 /* Navigation Bar */
+.logo{
+  height: 150px;
+  width: auto;
+}
 .navbar{
   padding: 0 0 2.5rem;
 }
