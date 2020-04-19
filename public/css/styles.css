@@ -20,6 +20,7 @@ body{
   max-width: 100%;
   min-width: 100%;
 }
+
  
 
 /* SECTIONS */
@@ -44,10 +45,12 @@ body{
 /* Headings */
 .big-heading{
   margin-top: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 5rem !important;
   line-height: 1.5;
   color: white;
+
+  
 }
 .section-heading{
   font-size: 3rem;
@@ -134,33 +137,38 @@ body{
   padding: 3% 0 0;
   display: flex;
   justify-content: center;
+
 }
 .footer > a {
   margin: 0 1% 1%;
+}
+
+.insta,.vk,.mail{
+  background-color: white;
+  -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ transition: background-color 1s;
+ 
+}
+.insta:hover{
+ background: #D5378C;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+.vk:hover{
+  background-color: #4c75a3;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+.mail:hover{
+  background-color: #fe464a;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .by-Eugene{
   margin: 0;
   padding: 0 0 1.5%;
   color: white;
-}
-
-/* media queries */
-
-@media (max-width:1068px) {
-  body{
-    margin:0;
-    padding: 0;
-  }
-  .colored-section{
-    background-size: cover;
-    background-attachment: scroll;
-  }
-  .big-heading{
-    font-size: 1.6rem !important;
-  }
-  #title{
-    text-align: center;
-  }
 }
 /* contact */
 

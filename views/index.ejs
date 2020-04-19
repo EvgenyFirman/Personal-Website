@@ -12,10 +12,14 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/queries.css">
     <script src="https://kit.fontawesome.com/bc00ad95da.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous" defer></script>
+   <script src="script.js" defer></script>
     <script src="app.js" defer></script>
+   
 
   </head>
  
@@ -41,15 +45,15 @@
 
           <ul class="navbar-nav ml-auto">
 
-            <li class="nav-item">
-              <a class="nav-link" href="#features">Навыки</a>
+            <li class="nav-item ">
+              <a class="nav-link js--scroll-to-features" href="#features">Навыки</a>
             </li>
 
             <li class="nav-item">
               <a class="nav-link" href="#about">Обо мне</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#partnership">Сотрудничество</a>
+            <li class="nav-item  ">
+              <a class="nav-link js--scroll-to-partnership" href="#partnership">Сотрудничество</a>
             </li>
           </ul>
         </div>
@@ -62,11 +66,11 @@
 
       <div class="col-lg-12" >
         
-        <h1 class="big-heading"> <%= title1 %> </h1>
+        <h1 class="big-heading">  <%= title1 %> </h1>
 
         <h1 class="big-heading web-dev"> <%= title2 %> </h1>
 
-       <a href="#partnership"><button type="button" class="btn  btn-lg btn-danger"><i class="fab "></i>Связаться со мной </button></a>
+       <a href="#partnership"><button type="button" class="btn js--scroll-to-partnership btn-lg btn-danger"><i class="fab "></i>Связаться со мной </button></a>
 
       </div>
       </div>
@@ -78,7 +82,7 @@
 
   <!-- Features -->
 
-  <section class="white-section" id="features">
+  <section class="white-section js--features" id="features">
   <div class="container-fluid">
     <h2> Мои навыки </h2>
      <hr>
@@ -130,7 +134,7 @@
 
 
 <!-- Contact-me -->
-<section id="partnership">
+<section id="partnership" class="js--partnership">
 <div  class="colored-section color-contact"> 
 <div class="container contact">
 	<div class="row contact-row">
@@ -180,11 +184,9 @@
 
   
     <div class="container-fluid footer">
-
-
-    <a href="https://vk.com/evgeny_firman"><i class="footer-icons fab fa-vk"></i></a>
-    <a href="https://instagram.com/omg_eugene"><i class="footer-icons fab fa-instagram"></i></a>
-    <a href="mailto:Eugeniolio@yandex.ru"><i class="footer-icons fas fa-envelope"></i></a>
+    <a href="https://vk.com/evgeny_firman"><i class="footer-icons fab fa-vk vk"></i></a>
+    <a href="https://instagram.com/omg_eugene"><i class="footer-icons fab fa-instagram insta"></i></a>
+    <a href="mailto:Eugeniolio@yandex.ru"><i class="footer-icons fas fa-envelope mail"></i></a>
   </div>
   <p class="by-Eugene">©  By Eugene Firman 2019</p>
 
@@ -192,7 +194,6 @@
 
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
