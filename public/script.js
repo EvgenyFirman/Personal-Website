@@ -9,7 +9,7 @@
     $(".js--animated").waypoint(function(direction){
         $(".js--animated").addClass("animated fadeIn")
     },{
-        offset: "50%"
+        offset: "70%"
     });
 });
 
