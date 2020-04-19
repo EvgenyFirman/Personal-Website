@@ -187,3 +187,12 @@ body{
 .contact-info{
   padding: 2% 0 0;
 }
+
+/* animate form */
+
+.js--animated{
+  opacity: 0;
+}
+.js-animated .animated{
+  opacity: 1;
+}
